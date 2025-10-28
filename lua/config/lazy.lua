@@ -13,11 +13,18 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
   end
 end
 vim.opt.rtp:prepend(lazypath)
+-- vim.g.lazyvim_check_order = false
 require("lazy").setup({
   spec = {
-    -- add LazyVim and import its plugins
+    -- add LazyVim and import its plugins (order - 1)
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
-    -- import/override with your plugins
+
+
+    -- This is Extras plugins  (order - 2)
+    { import = "lazyvim.plugins.extras.lang.json" },
+    { import = "lazyvim.plugins.extras.lang.typescript" },
+
+    -- import/override with your plugins (order - 3)
     { import = "plugins" },
   },
   defaults = {
