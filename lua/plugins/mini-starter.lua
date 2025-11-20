@@ -17,7 +17,8 @@ return {
 
     local items = {
       { name = "  New file",       action = "enew",                  key = "n", section = "Files" },
-      { name = "  Find file",       action = "Telescope find_files", key = "f", section = "Telescope" },
+      -- { name = "  Find file",       action = "Telescope find_files", key = "f", section = "Telescope" },
+      { name = "  Find file",       action = "Telescope find_files", key = "f", section = "Telescope" },
       { name = "  Find text",       action = "Telescope live_grep",  key = "g", section = "Telescope" },
       { name = "  Recent files",    action = "Telescope oldfiles",   key = "r", section = "Files" },
       { name = "  Open config",     action = "edit $MYVIMRC",        key = "c", section = "Config" },
