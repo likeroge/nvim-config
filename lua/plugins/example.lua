@@ -19,14 +19,15 @@ return {
         -- Optionally configure and load the colorscheme
         -- directly inside the plugin declaration.
         vim.g.gruvbox_material_enable_italic = true
-        vim.cmd.colorscheme('gruvbox-material')
+        -- vim.cmd.colorscheme('gruvbox-material')
       end
     },
   -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox-material",
+      -- colorscheme = "gruvbox-material",
+      colorscheme = "dracula-soft",
     },
   },
   { "nvim-tree/nvim-web-devicons", opts = {} },
