@@ -9,6 +9,7 @@
 -- * disable/enabled LazyVim plugins
 -- * override the configuration of LazyVim plugins
 return {
+  -- {'caplod/extract.nvim' },
   -- add gruvbox
   { "ellisonleao/gruvbox.nvim" },
       {
